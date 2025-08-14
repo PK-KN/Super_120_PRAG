@@ -1,0 +1,19 @@
+n = int(input("Enter a number: "))
+def print_sequence(n):
+    if n == 0:
+        return
+    print_sequence(n - 1)
+    print(n, end=" ")
+
+
+def print_reverse_sequence(n):
+    if n == 0:
+        return
+    print(n, end=" ")
+    print_reverse_sequence(n - 1)
+
+
+print("\nSequence using recursion:")
+print_sequence(n)
+print("\nReverse sequence using recursion:")
+print_reverse_sequence(n)
